@@ -27,5 +27,46 @@
       </div>
     </nav>
   </header>
+    <main id="main-content">
+    <section class="page-intro">
+      <div class="container">
+        <p class="eyebrow">Nga ideja te prototipi</p>
+        <h1>Projekte të vogla, <em>mundësi të mëdha.</em></h1>
+        <p>Këto janë ide ushtrimesh për workshop-in, jo projekte të përfunduara të pjesëmarrësve.</p>
+      </div>
+    </section>
+        <section class="section-pad">
+      <div class="container">
+        <div class="project-tools">
+          <label class="search-field" for="project-search">Kërko ide
+            <input id="project-search" type="search" placeholder="Kërko sipas emrit ose aftësisë" autocomplete="off">
+          </label>
+
+          <label class="search-field" for="project-category">Kategoria
+            <select id="project-category">
+              <option value="all">Të gjitha kategoritë</option>
+              <option value="web">Web</option>
+              <option value="design">Dizajn</option>
+              <option value="logic">Logjikë</option>
+            </select>
+          </label>
+        </div>
+                <div class="project-summary" aria-live="polite">
+          <p id="project-count">Po përgatiten idetë...</p>
+          <p id="project-skills"></p>
+        </div>
+
+        <div class="project-grid" id="project-list" aria-live="polite"></div>
+
+        <p class="empty-state" id="project-empty" hidden>
+          Nuk u gjet asnjë ide me këto filtra.
+        </p>
+
+        <noscript>
+          <p class="empty-state">Aktivizo JavaScript në shfletues për të parë dhe filtruar idetë.</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
   </body>
 </html>
