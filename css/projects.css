@@ -118,3 +118,23 @@
     grid-template-columns: 1fr;
   }
 }
+.project-card {
+  min-width: 0;
+  padding: 24px;
+  background: var(--paper);
+  animation: page-arrive 420ms ease-out both;
+}
+
+.project-card:nth-child(2) { animation-delay: 40ms; }
+.project-card:nth-child(3) { animation-delay: 80ms; }
+.project-card:nth-child(4) { animation-delay: 120ms; }
+.project-card:nth-child(5) { animation-delay: 160ms; }
+.project-card:nth-child(6) { animation-delay: 200ms; }
+
+.project-category {
+  margin: 0 0 12px;
+  color: #934264;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
