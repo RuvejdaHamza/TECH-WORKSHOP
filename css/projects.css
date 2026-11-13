@@ -1,1 +1,13 @@
+.page-intro {
+  padding-block: clamp(72px, 10vw, 128px);
+  background: linear-gradient(115deg, var(--pine), #63354f);
+  color: var(--white);
+}
 
+.page-intro .container {
+  animation: page-arrive 650ms ease-out both;
+}
+
+.page-intro .eyebrow {
+  color: #e8c7d5;
+}
