@@ -87,3 +87,34 @@
 .project-summary p {
   margin: 0;
 }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 767.98px) {
+  .page-intro h1 {
+    font-size: 48px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .project-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .page-intro h1 {
+    font-size: 42px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
